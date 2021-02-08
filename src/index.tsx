@@ -1,9 +1,12 @@
-import React from 'react'
+import ReactDOM from 'react-dom';
+import UserSearch from './refs/UserSearch';
 
-export default function index() {
-	return (
-		<div>
-			hey
-		</div>
-	)
-}
+const App = () => {
+  return (
+    <div>
+      <UserSearch />
+    </div>
+  );
+};
+
+ReactDOM.render(<App />, document.querySelector('#root'));
